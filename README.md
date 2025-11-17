@@ -50,7 +50,7 @@ It is calculated as:
 # REG NO : 25008840
 # NAME : P.Padmasree
 # SLOT NAME : 3P1-1
-
+```
 import numpy as np 
  
 L = [int(i) for i in input("Enter arrival data: ").split()] 
@@ -83,7 +83,7 @@ print(f"The Mean arrival rate is {mean:.3f}")
 print(f"The Variance of arrival from feeder is {var:.3f}") 
 print(f"The Standard deviation of arrival from feeder is {SD:.3f}") 
 
-
+```
 # collab link:
 
 https://colab.research.google.com/drive/15yeEUD1jdrJK2We1t5TmgWE9tXff9Qjk?usp=sharing
