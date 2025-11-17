@@ -47,14 +47,53 @@ It is calculated as:
 
 # Program: 
 
+# REG NO : 25008840
+# NAME : P.Padmasree
+# SLOT NAME : 3P1-1
+
+import numpy as np 
+ 
+L = [int(i) for i in input("Enter arrival data: ").split()] 
+ 
+N = len(L) 
+M = max(L) 
+x = [] 
+f = [] 
+ 
+for i in range(M + 1): 
+    c = 0 
+    for j in range(N): 
+        if L[j] == i: 
+            c += 1 
+    f.append(c) 
+    x.append(i) 
+ 
+sf = np.sum(f) 
+ 
+p = [f[i] / sf for i in range(M + 1)] 
+ 
+mean = np.inner(x, p) 
+ 
+EX2 = np.inner(np.square(x), p) 
+ 
+var = EX2 - mean**2 
+SD = np.sqrt(var) 
+ 
+print(f"The Mean arrival rate is {mean:.3f}") 
+print(f"The Variance of arrival from feeder is {var:.3f}") 
+print(f"The Standard deviation of arrival from feeder is {SD:.3f}") 
 
 
+# collab link:
 
-
+https://colab.research.google.com/drive/15yeEUD1jdrJK2We1t5TmgWE9tXff9Qjk?usp=sharing
 
 
 
 # Output:
+
+
+<img width="1920" height="1080" alt="output1" src="https://github.com/user-attachments/assets/52841bc5-28b6-471d-adbe-84fdcbb877d0" />
 
 
 
